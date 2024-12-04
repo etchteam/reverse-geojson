@@ -32,9 +32,7 @@ if (json.type === "Topology") {
     json = topojson.feature(json, json.objects[property]);
 }
 
-json.features = json.features.map(feature =>
-    rewind(feature, { reverse: true })
-);
+json = rewind(json, { reverse: true });
 
 const output = JSON.stringify(json);
 
