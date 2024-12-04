@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { rewind } from '@turf/turf';
+import rewind from '@turf/rewind';
 import * as topojson from "topojson-client"
 import yargs from 'yargs';
 import { readFileSync, writeFileSync } from 'node:fs';
